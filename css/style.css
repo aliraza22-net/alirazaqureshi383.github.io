@@ -49,6 +49,10 @@ section{
     text-transform: uppercase;
     color:#222;
 }
+.bottom-margin{
+    padding-bottom: 10rem;
+
+}
 
 .heading span{
     text-transform: uppercase;
