@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> Ali Raza</title>
-    <link href="images/ali.png" rel="icon" type="images/gif/jpg">
+    <title>Ali Raza</title>
+    <link href="images/ali.png" rel="icon" type="images/gif/jpg" />
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- header section starts  -->
 
     <header>
+      <div id="menu-bars" class="fas fa-bars"></div>
 
-        <div id="menu-bars" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#portfolio">portfolio</a>
+        <!-- <a href="result.html">Pucit Data</a> -->
 
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#portfolio">portfolio</a>
-            <!-- <a href="result.html">Pucit Data</a> -->
-
-            <a href="#contact">contact</a>
-        </nav>
-
+        <a href="#contact">contact</a>
+      </nav>
     </header>
 
     <!-- header section ends -->
@@ -41,16 +39,14 @@
     <!-- home section starts  -->
 
     <section class="home" id="home">
+      <div id="particles-js"></div>
 
-        <div id="particles-js"></div>
-
-        <div class="content">
-            <img class="tilt" src="images/ali.png" alt="ali">
-            <h3> Ali <span>Raza</span> </h3>
-            <p> i'm a <span class="typing-text"> React Native Developer </span> </p>
-            <a href="#about" class="btn">About me</a>
-        </div>
-
+      <div class="content">
+        <img class="tilt" src="images/ali.png" alt="ali" />
+        <h3>Ali <span>Raza</span></h3>
+        <p>i'm a <span class="typing-text"> React Native Developer </span></p>
+        <a href="#about" class="btn">About me</a>
+      </div>
     </section>
 
     <!-- home section ends -->
@@ -58,192 +54,239 @@
     <!-- about section starts  -->
 
     <section class="about" id="about">
+      <h1 class="heading">about <span>me</span></h1>
 
-        <h1 class="heading"> about <span>me</span> </h1>
-
-        <div class="row">
-	
-            <div class="image">
-                <img class="tilt" src="images/ali.png" alt="ali">
-            </div>
-
-            <div class="content">
-                <h3> my name is <span> Ali Raza </span> </h3>
-                <p class="info">React js & React Native Developer</p>
-                <div class="box-container">
-                    <div class="box">
-                        <p> <span> age: </span> 26 </p>
-                        <p> <span> gender: </span> male </p>
-                        <p> <span> experience : </span> 3 years + </p>
-                        <p> <span> freelance : </span> available </p>
-                    </div>
-                    <div class="box">
-                        <p> <span> language : </span> urdu / english </p>
-                        <p> <span> phone : </span> +92 3034093515 </p>
-                        <p> <span> email : </span> ali.raza.qureshi383@gmail.com </p>
-                        <p> <span> address : </span> Shadbagh, Lahore, Pakistan</p>
-                    </div>
-                </div>
-                <a href="cv/Resume.pdf" target="_blank" class="btn" download>Download CV</a>
-            </div>
-
+      <div class="row">
+        <div class="image">
+          <img class="tilt" src="images/ali.png" alt="ali" />
         </div>
 
+        <div class="content">
+          <h3>my name is <span> Ali Raza </span></h3>
+          <p class="info">
+            I am a full-stack developer specializing in the MERN stack with over
+            6 years of experience delivering high-quality web and mobile
+            applications. I have a strong background in developing scalable,
+            efficient solutions using React.js, Node.js, Express, and MongoDB.
+            Additionally, I have extensive experience in building cross-platform
+            mobile apps with React Native for both Android and iOS.
+          </p>
+
+          <p class="info">
+            I have successfully led and executed numerous projects for clients
+            across diverse industries, ensuring a seamless user experience with
+            modern UI/UX standards and implementing robust back-end systems. My
+            expertise in web and mobile development, paired with a passion for
+            innovative technologies, enables me to create solutions that align
+            with clients' business goals while maintaining technical excellence.
+          </p>
+          <div class="box-container">
+            <div class="box">
+              <!-- <p> <span> age: </span> 28 </p> -->
+              <p><span> gender: </span> male</p>
+              <p><span> experience : </span> 6 years +</p>
+              <p><span> freelance : </span> available</p>
+            </div>
+            <div class="box">
+              <p><span> language : </span> english</p>
+              <p><span> phone : </span> +92 3034093515 (Whatsapp)</p>
+              <p><span> email : </span> ali.raza.qureshi383@gmail.com</p>
+              <p><span> location : </span>Pakistan, Remote</p>
+            </div>
+          </div>
+          <a href="cv/Resume.pdf" target="_blank" class="btn" download
+            >Download CV</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- about section ends -->
 
-
-
-
-
-
-
-
     <!-- Education section starts  -->
 
     <section class="services" id="services">
+      <h1 class="heading"><span> my </span> Education</h1>
 
-        <h1 class="heading"> <span> my </span> Education </h1>
-
-        <div class="box-container">
-
-            <div class="box tilt">
-                <i class="fas fa-university"></i>
-                <h3>Bachelor in Computer Science</h3>
-                <p class="mb-2"><strong>University of South Asia</strong> 
-                    | <small>Cantt</small>
-                </p>
-                <p>Studies Bachelor in Computer Science at University of south cantt Campus Lahore</p>
-            </div>
-
-            <div class="box tilt">
-                <i class="fas fa-pen"></i>
-                <h3>Intermediate in Computer Science</h3>
-                <p class="mb-2"><strong>Punjab College </strong> 
-                    | <small>Campus 5</small>
-                </p>
-                <p>Studied ICS from Punjab College Campus 5 Muslim Town WahdatRoad, Lahore</p>
-
-            </div>
-
-            <div class="box tilt">
-                <i class="fas fa-school"></i>
-                <h3>Matriculation</h3>
-                <p class="mb-2"><strong>The Educators</strong>
-                    | <small>Shadbagh</small>
-                </p>
-                <p>Studied Matriculation from The Educators Shadbagh ,Lahore</p>
-            </div>
-
+      <div class="box-container">
+        <div class="box tilt">
+          <i class="fas fa-university"></i>
+          <h3>Masters</h3>
+          <p class="mb-2"><strong>COMSATAS</strong> | <small>Lahore</small></p>
+          <p>Studies MAster in Computer Science at COMSATS Lahore</p>
         </div>
 
+        <div class="box tilt">
+          <i class="fas fa-university"></i>
+          <h3>Bachelor in Computer Science</h3>
+          <p class="mb-2">
+            <strong>University of South Asia</strong> | <small>Cantt</small>
+          </p>
+          <p>
+            Studies Bachelor in Computer Science at University of south cantt
+            Campus Lahore
+          </p>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box tilt">
+          <i class="fas fa-pen"></i>
+          <h3>Intermediate in Computer Science</h3>
+          <p class="mb-2">
+            <strong>Punjab College </strong> | <small>Campus 5</small>
+          </p>
+          <p>
+            Studied ICS from Punjab College Campus 5 Muslim Town WahdatRoad,
+            Lahore
+          </p>
+        </div>
+
+        <div class="box tilt">
+          <i class="fas fa-school"></i>
+          <h3>Matriculation</h3>
+          <p class="mb-2">
+            <strong>The Educators</strong> | <small>Shadbagh</small>
+          </p>
+          <p>Studied Matriculation from The Educators Shadbagh ,Lahore</p>
+        </div>
+      </div>
     </section>
 
     <!-- Education section end -->
 
-
-
-
-
-
-
-
     <!-- Expericence section starts  -->
 
     <section class="services" id="services">
+      <h1 class="heading"><span> my </span> experience</h1>
 
-        <h1 class="heading"> <span> my </span> experience </h1>
-
-        <div class="box-container">
-
-
-            <div class="box tilt">
-                <i class="fab fa-android"></i>
-                <h3> Android App Developer | <small>Android Studio | </small><small>React Native </small></h3>
-                <p class="mb-2"><strong>Arban Studio</strong> | <small> 8 Months</small></p>
-                <p>I started my journey as an Android App Developer but for IOS apps I started working on react native. </p>
-
-            </div>  
-
-            <div class="box tilt">
-                <i class="fas fa-terminal"></i>
-
-
-
-                <h3> React js and React Native Developer</h3>
-                <p class="mb-2"><strong>Stackup Solutions</strong> | <small> 1.5 year +</small></p>
-                <p>React Native Developer at Stackup Solutions </p>
-
-            </div>  
-            <div class="box tilt">
-                <i class="fas fa-terminal"></i>
-
-                <h3>Experinced React Native Developer</h3>
-                <p class="mb-2"><strong>Aldaim Solutions</strong> | <small> 1.5 year +</small></p>
-                <p>Senior React Native Developer at Aldaim Solutions </p>
-
-            </div>
-           
-
+      <div class="box-container">
+        <div class="box tilt">
+          <i class="fas fa-briefcase"></i>
+          <h3>Senior MERN Stack Developer</h3>
+          <p class="mb-2">
+            <strong>HAshlogics</strong> | <small>1 year and Countinue</small>
+          </p>
+          <p>Senior MERN Stack Developer at Hashlogics</p>
         </div>
 
+        <div class="box tilt">
+          <i class="fas fa-briefcase"></i>
+
+          <h3>Senior MERN Stack and React Native Developer</h3>
+          <p class="mb-2">
+            <strong>Aldaim Solutions</strong> | <small> 2 year +</small>
+          </p>
+          <p>React Native Developer at Aldaim Solutions</p>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box tilt">
+          <i class="fas fa-briefcase"></i>
+
+          <h3>Senior React Native Developer</h3>
+          <p class="mb-2">
+            <strong>Stackup Solutions</strong> | <small> 1.5 year +</small>
+          </p>
+          <p>Senior React Native Developer at Stackup Solutions</p>
+        </div>
+        <div class="box tilt">
+          <i class="fas fa-briefcase"></i>
+
+          <h3>React Native Developer</h3>
+          <p class="mb-2">
+            <strong>ID Logix</strong> | <small> 1.5 year +</small>
+          </p>
+          <p>React Native Developer at ID Logix</p>
+        </div>
+      </div>
     </section>
 
-
-    
-
     <!-- Expericence section end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- services section starts  -->
 
     <section class="services" id="services">
+      <h1 class="heading"><span> my </span> services</h1>
 
-        <h1 class="heading"> <span> my </span> services </h1>
-
-        <div class="box-container">
-
-            <div class="box tilt">
-                <i class="fas fa-code"></i>
-                <h3>Web Development</h3>
-                <p>Web Development Mern Stack</p>
-            </div>
-
-            <div class="box tilt">
-                <i class="fab fa-apple"></i>
-                <h3>IOS Development</h3>
-                <p>Experinced in Xcode, App store & App Optimization </p>
-            </div>
-
-            <div class="box tilt">
-                <i class="fas fa-terminal"></i>
-                <h3>Apps Development</h3>
-                <p>App Development Using React Native CLI and Expo CLI</p>
-            </div>
-
+      <div class="box-container">
+        <div class="box tilt">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Web Development Mern Stack</p>
         </div>
 
+        <div class="box tilt">
+          <i class="fab fa-apple"></i>
+          <h3>IOS Development</h3>
+          <p>Experinced in Xcode, App store & App Optimization</p>
+        </div>
+
+        <div class="box tilt">
+          <i class="fas fa-terminal"></i>
+          <h3>Android Development</h3>
+          <p>App Development Using React Native CLI and Expo CLI</p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box tilt">
+          <i class="fas fa-plug"></i>
+          <h3>API Development</h3>
+          <p>
+            Designing and implementing RESTful or GraphQL APIs to enable
+            communication between different software component
+          </p>
+        </div>
+
+        <div class="box tilt">
+          <i class="fas fa-bug"></i>
+          <!-- Testing -->
+
+          <h3>Code Review, Quality Assurance, Testing and Bug fixing</h3>
+          <p>
+            Offering manual and automated testing services, including
+            performance testing and security assessments.
+          </p>
+        </div>
+
+        <div class="box tilt">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Technical Consulting and Strategy</h3>
+          <p>
+            Providing expert advice on technology stack selection, project
+            feasibility, and implementation strategies.
+          </p>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box tilt">
+          <i class="fas fa-palette"></i>
+          <h3>UI/UX Design</h3>
+          <p>
+            Designing user interfaces and improving user experiences for
+            applications and websites.
+          </p>
+        </div>
+
+        <div class="box tilt">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Services and DevOps</h3>
+          <p>
+            Implementing CI/CD pipelines, automation, and containerization
+            (e.g., Docker, Kubernetes)
+          </p>
+        </div>
+
+        <div class="box tilt">
+          : <i class="fas fa-book"></i>
+          <h3>Knowledge Sharing:</h3>
+          <p>
+            Provide mentorship, coaching, and knowledge-sharing sessions to help
+            others improve their programming skills and understand software
+            development processes.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- services section ends -->
@@ -251,107 +294,205 @@
     <!-- portfolio section starts  -->
 
     <section class="portfolio" id="portfolio">
+      <h1 class="heading"><span> my </span> portfolio</h1>
+      <div class="box-container" id="project-container"></div>
+      <!-- Add this div -->
 
-        <h1 class="heading"> <span> my </span> portfolio </h1>
+      <script>
+        // Array of project data
+        const projects = [
+          {
+            imgSrc: "images/foodDelevery.png",
+            link: "https://github.com/AliRazaQureshi383/FoodDelevery.git",
+            btnText: "Food Delivery App Map Integration",
+            description: "",
+          },
+          {
+            imgSrc: "images/cryptomine.png",
+            link: "https://github.com/AliRazaQureshi383/CryptoMine.git",
+            btnText: "CryptoMine App using React Native and Firebase",
+            description: "",
+          },
+          {
+            imgSrc: "images/instagram.png",
+            link: "https://github.com/Haider-Aldaimsolutions/Facebook-Clone.git",
+            btnText: "Instagram Clone using React Native and Firebase",
+            description: "",
+          },
+          {
+            imgSrc: "images/translation.png",
+            link: "https://github.com/AliRazaQureshi383/Phrasebook.git",
+            btnText: "Translation and Voice Recognition App",
+            description: "",
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676363070/Screenshot_2023-02-14_135311_dc0tea.png",
+            link: "https://verved.vercel.app/",
+            btnText: "Verved.in",
+            description:
+              "Verved is a digital agency website designed with great animations & good user experience. Its using Next Js and animation libraries like GSAP & Framer Motion.",
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676478614/hoome_fubfvb.png",
+            link: "https://www.hoome.co.uk/",
+            btnText: "Hoome.co.uk",
+            description: `Hoome is a digital agency based in UK, I built this website to showcase their services. It's built using Next Js and Typescript.`,
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676478604/socialhall_ucji2v.png",
+            link: "https://socialhallhq.com/",
+            btnText: "Socialhallhq.com",
+            description: `Social Hall is a dating site, it's developed using Next Js, Typescript with SEO functionality implemented using Next-seo. It's a full stack application with 2000+ Daily Active Users.`,
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676478604/whaweclick_vzqfc7.png",
+            link: "https://www.whatweclick.com/",
+            btnText: "Whatweclick.com",
+            description:
+              "The portfolio website for Whatweclick, it a architecture photography agency. I recently wrote their website using TailwindCSS, Next Js & Typescript.",
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1679293338/nft_c4c1on.png",
+            link: "http://3.17.191.197/",
+            btnText: "Wave NFT Collection",
+            description:
+              "It's a showcase website for Wave NFT Collection, it has great animations which are implemented using Framer motion, GSAP & Anime Js. It's built using React Js & SCSS. ",
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676478606/sunshine_eygn01.png",
+            link: "https://sunshinejoy-live.netlify.app/",
+            btnText: "Sunshinejoy.com",
+            description: `Sunshine Joy is a ecommerce website which provides canva like interface to allow users to design their products. I built this using MERN Stack.`,
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676478605/transport_breauo.png",
+            link: "https://rehobothtransport.com/",
+            btnText: "Rehobothtransport.com",
+            description:
+              "Rehoboth Transport is a trucking company based in USA. I built their website using React Js & Tailwindcss and also wrote unit test using jest. It also uses nodemailer to send promotional emails, automated replies etc.",
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676478604/bricknbeam_pexm5w.png",
+            link: "https://www.bricknbeam.in/",
+            btnText: "Bricknbeam.in",
+            description:
+              "Bricknbeam is a architecture firm based in Indore, India. I wrote their website using Next Js & Talwind CSS in 2021 and have been maintaing it since then.",
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676478607/fantasybakery_nhun2p.png",
+            link: "https://fantasy-bakery-temp.vercel.app/",
+            btnText: "Fantasy Bakery",
+            description: `I built a complete ecommerce website for a local bakery. It's built with Next Js in the frontend and Express Js in the backend. I also built an admin panel which could be used to update website content & managing orders.`,
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676478606/surfeye_g5srb5.png",
+            link: "https://www.surfeye.video/",
+            btnText: "Surfeye.video",
+            description: `Surf Eye is a surfing company which allows members to surf and then send them their recordings using the website. I built their complete frontend using React JS & SCSS.`,
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676479098/sansadhan_jxi6w7.jpg",
+            link: "https://github.com/buggydecoders/Sih2022Finale",
+            btnText: "Sansadhan Prabandhan",
+            description: `It is a portal which allows institutes to share their resources, I built this project in Smart India Hackathon, I implemented the complete frontend and also built the web3 functionality which provides better security & contract assurance.`,
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676479180/flipkart_ionavn.png",
+            link: "https://github.com/kunals131/SmartKart-v2",
+            btnText: "SmartKart",
+            description: `Developed an eCommerce store that uses blockchain-based NFT Warranty (ERC721 Token). Implemented frontend using Next Js & a hybrid backend using Express, Solidity & Hardhat. Built a panel for the sellers to manage orders and complete e-commerce functionality for customers to place & track
+                    orders.`,
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676479257/171212468-530bc2b5-3cfe-4885-9acd-164a941a14c8_qixqi1.png",
+            link: "https://github.com/kunals131/Doctor-Appointment",
+            btnText: "Connect The Docs",
+            description: `Built a web application to connect patients & doctors including features such as AI Diagnosis, Doctor Recommendation,
+        and text messaging. Used socket.IO to implement text-messaging & notifications. Implemented AI diagnosis which predicts diseases based on symptoms & recommends best doctors.
+        `,
+          },
+          {
+            imgSrc:
+              "https://res.cloudinary.com/insight-byte/image/upload/v1676479328/147218151-f904fea0-b6a7-4bf9-908c-16091ca8dabc_a7n37d.png",
+            link: "https://reactroom.netlify.app/",
+            btnText: "React Room",
+            description: `Developed an Audio/Video conferencing web application using Dolby’s Voxeet SDK with Firebase’s real-time
+        database. Implemented Smart Voice Assistance using Web Speech APIs .
+        `,
+          },
+        ];
 
-        <div class="box-container">
-            <div class="box tilt">
-                <img src="images/foodDelevery.png" alt="">
-                <div class="content">
-                    <a href="https://github.com/AliRazaQureshi383/FoodDelevery.git" target='_blank' class="btn">Food Delevery App Map Integration</a>                  
-                </div>
-            </div>
-			
-			<div class="box tilt">
-                <img src="images/cryptomine.png" alt="">
-                <div class="content">
-                    <a href="https://github.com/AliRazaQureshi383/CryptoMine.git" target='_blank' class="btn">CryptoMine App using React Native and Firbase</a>                  
-                </div>
-            </div>			
-        </div>
-		
-		
-		<div class="box-container" style="margin-top: 20px">
-			<div class="box tilt">
-                <img src="images/instagram.png" alt="">
-                <div class="content">
-                    <a href="https://github.com/Haider-Aldaimsolutions/Facebook-Clone.git" target='_blank' class="btn">Instagram Clone using React Native and Firbase</a>                  
-                </div>
-            </div>			
-			
-			<div class="box tilt">
-                <img src="images/translation.png" alt="">
-                <div class="content">
-                    <a href="https://github.com/AliRazaQureshi383/Phrasebook.git" target='_blank' class="btn">Transaltion and voice recognation app</a>                  
-                </div>
-            </div>
-	
-		</div>
+        // Function to dynamically generate project cards
+        const projectContainer = document.getElementById("project-container");
 
-		<!-- <div class="box-container" style="margin-top: 20px">
-			<div class="box tilt">
-                <img src="images/img-1.png" alt="">
-                <div class="content">
-                    <a href="https://github.com/Haider-Aldaimsolutions/E-Calculator.git" target='_blank' class="btn">Calculator app in Ract Native </a>                  
-                </div>
-            </div>
-		</div>		 -->
-		
-		
+        projects.forEach((project) => {
+          const projectCard = `
+                    <div class="box tilt">
+                        <img src="${project.imgSrc}" alt="">
+                        <div class="content">
+                            <a href="${project.link}" target='_blank' class="btn">${project.btnText}</a>   
+                            <h3  >${project.description}</h3>               
+                        </div>
+                    </div>
+                `;
+          projectContainer.innerHTML += projectCard;
+        });
+      </script>
     </section>
 
     <!-- portfolio section ends -->
 
-
     <!-- contact section starts  -->
 
     <section class="contact" id="contact">
+      <h1 class="heading">contact <span> me </span></h1>
 
-        <h1 class="heading"> contact <span> me </span> </h1>
-
-        <div class="row">
-
-            <div class="image">
-                <img class="tilt" src="images/contact-img.svg" alt="">
-            </div>
-
-            <form action="index.html" method="post">
-
-                <div class="inputBox">
-                    <input type="text" placeholder="name">
-                    <input type="email" placeholder="email">
-                </div>
-
-                <input type="text" placeholder="subject" class="box">
-
-                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-
-                <input type="submit" class="btn" value="send message">
-
-            </form>
-
+      <div class="row">
+        <div class="image">
+          <img class="tilt" src="images/contact-img.svg" alt="" />
         </div>
 
+        <form action="index.html" method="post">
+          <div class="inputBox">
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+          </div>
+
+          <input type="text" placeholder="subject" class="box" />
+
+          <textarea
+            placeholder="message"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <input type="submit" class="btn" value="send message" />
+        </form>
+      </div>
     </section>
 
     <!-- contact section ends -->
 
     <!-- footer section  -->
 
-    <div class="footer"> Created by <span> Ali </span> | All Rights Reserved! </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="footer">
+      Created by <span> Ali </span> | All Rights Reserved!
+    </div>
 
     <!-- javascript part  -->
 
@@ -366,32 +507,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
     <script>
+      let menu = document.querySelector("#menu-bars");
+      let header = document.querySelector("header");
 
-        let menu = document.querySelector('#menu-bars');
-        let header = document.querySelector('header');
+      menu.onclick = () => {
+        menu.classList.toggle("fa-times");
+        header.classList.toggle("active");
+      };
 
-        menu.onclick = () => {
-            menu.classList.toggle('fa-times');
-            header.classList.toggle('active');
-        }
+      window.onscroll = () => {
+        menu.classList.remove("fa-times");
+        header.classList.remove("active");
+      };
 
-        window.onscroll = () => {
-            menu.classList.remove('fa-times');
-            header.classList.remove('active');
-        };
+      var typed = new Typed(".typing-text", {
+        strings: [
+          "MongoDB Developer",
+          "Mern Stack Developer",
+          "React.js Developer",
+          "React Native Developer",
+          "Node.js Developer",
+          "Mobile App Developer",
+          "IOS Developer",
+          "Hybrid Mobile App Developer",
+        ],
+        loop: true,
+        typeSpeed: 60,
+      });
 
-        var typed = new Typed('.typing-text', {
-            strings: ['MongoDB Developer', 'Mern Stack Developer', 'React.js Developer','React Native Developer', 'Node.js Developer','Mobile App Developer', 'IOS Developer' ,'Hybrid Mobile App Developer'],
-            loop: true,
-            typeSpeed: 60
-        });
-
-        VanillaTilt.init(document.querySelectorAll('.tilt'), {
-            max: 25
-        });
-
+      VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 25,
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
