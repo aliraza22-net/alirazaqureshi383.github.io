@@ -256,26 +256,201 @@
         }
 
         @media print {
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
             body {
                 padding: 0;
                 margin: 0;
+                background: white;
             }
+            
+            @page {
+                size: A4;
+                margin: 1.5cm 1.2cm;
+            }
+            
             .resume-container {
                 box-shadow: none;
-                padding: 2rem;
+                padding: 0;
                 max-width: 100%;
+                margin: 0;
             }
+            
+            .resume-header {
+                padding-bottom: 1.2rem;
+                margin-bottom: 1.5rem;
+                border-bottom: 2px solid #6366f1;
+            }
+            
+            .resume-header h1 {
+                font-size: 2rem;
+                margin-bottom: 0.3rem;
+            }
+            
+            .resume-header .title {
+                font-size: 1rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .resume-header .contact-info {
+                font-size: 0.75rem;
+                gap: 1rem;
+                line-height: 1.4;
+            }
+            
+            .resume-section {
+                margin-bottom: 1.8rem;
+            }
+            
             .section-title {
+                font-size: 1.2rem;
+                padding-bottom: 0.4rem;
+                margin-bottom: 1rem;
                 page-break-after: avoid;
             }
-            .experience-item, .education-item, .project-item {
+            
+            .section-title i {
+                font-size: 1.1rem;
+            }
+            
+            .summary {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                margin-bottom: 0;
+            }
+            
+            .experience-item, .education-item {
+                margin-bottom: 1.5rem;
+                padding-left: 1rem;
+                padding-bottom: 1.2rem;
                 page-break-inside: avoid;
             }
+            
+            .job-title {
+                font-size: 1.1rem;
+                margin-bottom: 0.2rem;
+            }
+            
+            .company {
+                font-size: 0.95rem;
+                margin-bottom: 0.2rem;
+            }
+            
+            .duration {
+                font-size: 0.8rem;
+                margin-bottom: 0.3rem;
+            }
+            
+            .location {
+                font-size: 0.75rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .job-description {
+                font-size: 0.85rem;
+                line-height: 1.5;
+                margin-bottom: 0.6rem;
+            }
+            
+            .achievements {
+                margin-bottom: 0.6rem;
+            }
+            
+            .achievements li {
+                font-size: 0.8rem;
+                margin-bottom: 0.3rem;
+                line-height: 1.4;
+            }
+            
+            .skill-tags {
+                gap: 0.4rem;
+            }
+            
+            .skill-tag {
+                padding: 0.2rem 0.6rem;
+                font-size: 0.75rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.8rem;
+            }
+            
+            .skill-category {
+                padding: 0.8rem;
+            }
+            
+            .skill-category h4 {
+                font-size: 0.9rem;
+                margin-bottom: 0.6rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .project-item {
+                padding: 1rem;
+                page-break-inside: avoid;
+            }
+            
+            .project-item h4 {
+                font-size: 1rem;
+                margin-bottom: 0.4rem;
+            }
+            
+            .project-item p {
+                font-size: 0.8rem;
+                line-height: 1.4;
+            }
+            
+            .project-tech {
+                margin-top: 0.6rem;
+                gap: 0.3rem;
+            }
+            
+            .project-tech span {
+                padding: 0.15rem 0.5rem;
+                font-size: 0.7rem;
+            }
+            
+            .education-item h3 {
+                font-size: 1.05rem;
+                margin-bottom: 0.2rem;
+            }
+            
+            .education-item .institution {
+                font-size: 0.9rem;
+                margin-bottom: 0.2rem;
+            }
+            
+            .education-item .location {
+                font-size: 0.8rem;
+                margin-bottom: 0.4rem;
+            }
+            
+            .education-item p {
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+            
             .print-btn {
                 display: none !important;
             }
-            @page {
-                margin: 1cm;
+            
+            /* Prevent page breaks in awkward places */
+            .resume-section:last-child {
+                page-break-after: auto;
+            }
+            
+            /* Ensure sections don't break awkwardly */
+            h2.section-title {
+                page-break-after: avoid;
+                page-break-inside: avoid;
             }
         }
 
