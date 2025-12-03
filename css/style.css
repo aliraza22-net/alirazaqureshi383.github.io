@@ -69,6 +69,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
 }
 
 .nav-menu {
@@ -311,6 +319,8 @@ body {
   width: 400px;
   height: 400px;
   cursor: pointer;
+  text-decoration: none;
+  display: block;
 }
 
 .image-wrapper img {
@@ -444,7 +454,7 @@ body {
 @keyframes orbitIcon {
   0% {
     transform: rotate(0deg) translateX(220px) rotate(0deg);
-  }
+}
   100% {
     transform: rotate(360deg) translateX(220px) rotate(-360deg);
   }
@@ -1142,7 +1152,7 @@ section {
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
-}
+    }
 
 .form-group input:focus,
 .form-group textarea:focus {
@@ -1154,14 +1164,14 @@ section {
 .form-group textarea {
   resize: vertical;
   min-height: 150px;
-}
-
+    }
+    
 /* Footer */
 .footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
   padding: 2rem 0;
-}
+    }
 
 .footer-content {
   max-width: 1200px;
@@ -1170,7 +1180,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+    }
 
 .footer-text {
   color: var(--text-secondary);
@@ -1194,7 +1204,7 @@ section {
   color: var(--text-secondary);
   text-decoration: none;
   transition: all 0.3s ease;
-}
+    }
 
 .social-link:hover {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -1208,7 +1218,7 @@ section {
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
-  }
+    }
 
   .hero-image {
     order: -1;
@@ -1237,7 +1247,7 @@ section {
   .timeline-item {
     flex-direction: row !important;
     padding-left: 3rem;
-  }
+    }
 
   .timeline-marker {
     left: 20px;
@@ -1279,17 +1289,17 @@ section {
 
   .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
-  }
+    }
 }
 
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
-  }
+    }
 
   .section-title {
     font-size: 2rem;
-  }
+    }
 
   .portfolio-grid {
     grid-template-columns: 1fr;
@@ -1306,5 +1316,5 @@ section {
 
   .about-info {
     grid-template-columns: 1fr;
-  }
+    }
 }
