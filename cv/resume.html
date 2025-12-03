@@ -683,17 +683,6 @@
         <i class="fas fa-print"></i>
         <span>Print / Save as PDF</span>
     </button>
-    <script>
-        // Auto-trigger print dialog if opened from download button
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('print') === 'true') {
-            window.addEventListener('load', function() {
-                setTimeout(() => {
-                    window.print();
-                }, 500);
-            });
-        }
-    </script>
 </body>
 </html>
 

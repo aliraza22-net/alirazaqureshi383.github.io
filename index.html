@@ -790,18 +790,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="js/app.js?v=4.0"></script>
     <script>
-      // Function to open resume in new window and trigger print dialog
+      // Function to open resume in new window
       function downloadResume(e) {
         e.preventDefault();
-        // Open resume in new window with print parameter
-        const resumeWindow = window.open('cv/resume.html?print=true', '_blank');
-        // Also trigger print after a short delay to ensure page loads
-        setTimeout(() => {
-          if (resumeWindow && !resumeWindow.closed) {
-            resumeWindow.focus();
-            resumeWindow.print();
-          }
-        }, 1000);
+        // Open resume in new window - user can click print button when ready
+        window.open('cv/resume.html', '_blank');
       }
     </script>
   </body>
