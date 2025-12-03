@@ -258,17 +258,51 @@
         @media print {
             body {
                 padding: 0;
+                margin: 0;
             }
             .resume-container {
                 box-shadow: none;
                 padding: 2rem;
+                max-width: 100%;
             }
             .section-title {
                 page-break-after: avoid;
             }
-            .experience-item, .education-item {
+            .experience-item, .education-item, .project-item {
                 page-break-inside: avoid;
             }
+            .print-btn {
+                display: none !important;
+            }
+            @page {
+                margin: 1cm;
+            }
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 1rem 2rem;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(99,102,241,0.3);
+            z-index: 1000;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .print-btn:hover {
+            background: #4f46e5;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(99,102,241,0.4);
         }
 
         @media (max-width: 768px) {
@@ -645,16 +679,20 @@
         </div>
     </div>
 
+    <button class="print-btn" onclick="window.print()">
+        <i class="fas fa-print"></i>
+        <span>Print / Save as PDF</span>
+    </button>
     <script>
-        // Print functionality
-        window.addEventListener('load', function() {
-            // Add print button (optional)
-            const printBtn = document.createElement('button');
-            printBtn.innerHTML = '<i class="fas fa-print"></i> Print / Save as PDF';
-            printBtn.style.cssText = 'position: fixed; bottom: 20px; right: 20px; padding: 1rem 2rem; background: #6366f1; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; box-shadow: 0 4px 12px rgba(99,102,241,0.3); z-index: 1000;';
-            printBtn.onclick = () => window.print();
-            document.body.appendChild(printBtn);
-        });
+        // Auto-trigger print dialog if opened from download button
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('print') === 'true') {
+            window.addEventListener('load', function() {
+                setTimeout(() => {
+                    window.print();
+                }, 500);
+            });
+        }
     </script>
 </body>
 </html>

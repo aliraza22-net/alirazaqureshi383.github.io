@@ -93,12 +93,8 @@
               <span>View My Work</span>
               <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="cv/resume.html" target="_blank" class="btn btn-secondary">
-              <span>View Resume</span>
-              <i class="fas fa-file-alt"></i>
-            </a>
-            <a href="cv/Resume.pdf" target="_blank" class="btn btn-secondary" download style="margin-left: 1rem;">
-              <span>Download PDF</span>
+            <a href="cv/resume.html" target="_blank" class="btn btn-secondary" onclick="downloadResume(event)">
+              <span>Download Resume</span>
               <i class="fas fa-download"></i>
             </a>
           </div>
@@ -793,5 +789,20 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="js/app.js?v=4.0"></script>
+    <script>
+      // Function to open resume in new window and trigger print dialog
+      function downloadResume(e) {
+        e.preventDefault();
+        // Open resume in new window with print parameter
+        const resumeWindow = window.open('cv/resume.html?print=true', '_blank');
+        // Also trigger print after a short delay to ensure page loads
+        setTimeout(() => {
+          if (resumeWindow && !resumeWindow.closed) {
+            resumeWindow.focus();
+            resumeWindow.print();
+          }
+        }, 1000);
+      }
+    </script>
   </body>
 </html>
